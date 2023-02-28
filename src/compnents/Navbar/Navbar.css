@@ -1,0 +1,308 @@
+.header-content{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    padding-left:50px ;
+    padding-right:50px ;
+    padding-top: 50px;
+}
+
+.header-content>h2{
+    color:rgb(44, 123, 188);
+    font: 2.5em sans-serif;
+    font-weight: bold;
+
+}
+.navbar-header{
+    background-color: rgb(5, 48, 84);
+    height: 16.2rem;
+}
+.navbar-tab{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* color: white; */
+    /* width: 50%; */
+}
+.navbar-tabs{
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+}
+.navbar-tabs>Tab{
+    margin: 50px;
+    color: rgb(193, 193, 193);
+}
+.css-heg063-MuiTabs-flexContainer {
+    justify-content: space-around;
+    /* color: white; */
+
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected{
+    color: rgb(255, 255, 255) !important;
+}
+.css-sjgo5b-MuiButtonBase-root-MuiTab-root.Mui-selected{
+    color: rgb(255, 255, 255) !important;
+
+}
+
+.bom-navbar ,.cal-navbar,.snap-navbar{
+    pading-top: 110px;
+    position:absolute;
+    left:0;
+    /* padding-left: 20px; */
+    width: 40.2cm;
+}
+.cal-heading{
+    margin-top: 25px;
+    margin-left: -200px;
+    background-color: rgb(186, 188, 188);
+    height: 100px;
+    display: flex;
+    width: 40.60cm;
+    justify-content: center;
+    align-items: center;
+}
+.snap-heading{
+    margin-top: 25px;
+    /* margin-left: -200px; */
+    background-color: rgb(186, 188, 188);
+    height: 100px;
+    display: flex;
+    width: 40.3cm;
+    justify-content: center;
+    align-items: center;
+}
+.bom-heading{
+    margin-top: 25px;
+    background-color: rgb(186, 188, 188);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.css-ahj2mt-MuiTypography-root{
+    width:1000px;
+}
+
+.bom-form{
+    border-radius: 12px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin: 30px;
+    background-color: rgb(117, 117, 117);
+    z-index: 100;
+    width: 38cm;
+    height: 16cm;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+
+.row-1,.row-2{    margin-bottom: 10px;
+margin-top: 20px;
+    margin-bottom: 20px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height: 60px;
+    margin-bottom: 20px;
+}
+.row3{
+    margin-left: -15px;
+    margin-bottom: 20px;
+}
+.row-1>input ,	.MuiInput-root{
+    width: 17.7cm;
+    height: 30px;
+    padding: 10px;
+    /*font-style: small;
+    */font-family: "Helvetica Neue",Helvetica,A;
+    border:none;
+    font-size: 20px;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+}
+.input-labell{
+    width: 11.5cm;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.row-2>input ,.input-labell>input{
+    width: 11.5cm;
+    height: 30px;
+    padding: 10px;
+
+    /*font-style: small;
+    */font-family: "Helvetica Neue",Helvetica,A;
+    border:none;
+    font-size: 20px;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+    
+}
+
+.input-labell>label {
+    padding: 10px;
+    color: rgb(232, 232, 232);
+    font-size: 12px;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+
+
+
+.container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  .container header {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+  }
+  .container .form {
+    margin-top: 30px;
+  }
+  .form .input-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .input-box label {
+    color: #333;
+  }
+  .form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 90%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+  }
+  .input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  .form .column {
+    display: flex;
+    column-gap: 15px;
+  }
+  .form .gender-box {
+    margin-top: 20px;
+  }
+  .gender-box h3 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .form :where(.gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
+  .gender-option{
+flex-direction: column;
+justify-content:start;
+align-items: flex-start;
+  }
+  .form .gender {
+    column-gap: 5px;
+  }
+  .gender input {
+    accent-color: rgb(130, 106, 251);
+
+  }
+  .form :where(.gender input, .gender label) {
+    cursor: pointer;
+    size: 30px;
+  }
+  .gender label {
+    color: #707070;
+  }
+  .address :where(input, .select-box) {
+    margin-top: 15px;
+  }
+  .select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+  }
+  .form button {
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: rgb(130, 106, 251);
+  }
+  .form button:hover {
+    background: rgb(88, 56, 250);
+  }
+  /*Responsive*/
+  @media screen and (max-width: 500px) {
+    .form .column {
+      flex-wrap: wrap;
+    }
+    .form :where(.gender-option, .gender) {
+      row-gap: 15px;
+    }
+  }
+   
+  .cal-form{
+    width:35cm;
+  }
+
+
+  .project-select{
+    margin-top: 20px;
+  }
+
+
+
+
+  /* snap Shot css */
+
+
+  .snap-form{
+    margin:30px;
+    margin-left: 100px;
+    height: 11cm;
+    width: 35cm;
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

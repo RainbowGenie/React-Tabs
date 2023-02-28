@@ -83,78 +83,7 @@ const NavigationBar = () => {
           <h2>Wi-Fi</h2>
           <Cisco />
         </div>
-
         <div className="navbar-tab">
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "2rem",
-            }}
-          >
-            <Button
-              color="primary"
-              aria-controls="simple-menu"
-              aria-haspopup="true"
-              style={{
-                width: "fit-content",
-                padding: "5px 10px",
-                color: "white",
-                fontSize: "2rem",
-                textTransform: "capitalize",
-              }}
-              onClick={(e) => handleClick(e, 0)}
-            >
-              Use Case
-            </Button>
-            <Button
-              color="primary"
-              aria-controls="simple-menu"
-              aria-haspopup="true"
-              style={{
-                width: "fit-content",
-                padding: "5px 10px",
-                color: "white",
-                fontSize: "2rem",
-                textTransform: "capitalize",
-              }}
-              onClick={(e) => handleClick(e, 1)}
-            >
-              KT Repo
-            </Button>
-            <Button
-              color="primary"
-              aria-controls="simple-menu"
-              aria-haspopup="true"
-              style={{
-                width: "fit-content",
-                padding: "5px 10px",
-                color: "white",
-                fontSize: "2rem",
-                textTransform: "capitalize",
-              }}
-              onClick={(e) => handleClick(e, 2)}
-            >
-              Presales
-            </Button>
-          </div>
-          <Menu
-            id="simple-menu"
-            anchorEl={anchorEl}
-            keepMounted
-            open={Boolean(anchorEl)}
-            onClose={handleClose}
-          >
-            {menuData.map(
-              (item) =>
-                item.type === currentMenuIndex && (
-                  <MenuItem key={item.id} onClick={handleClose}>
-                    {item.title}
-                  </MenuItem>
-                )
-            )}
-          </Menu>
           {/* <Box className="navbar-tab">
             <>
               <Tabs
@@ -190,6 +119,94 @@ const NavigationBar = () => {
               <SnapShot />
             </TabPanel>
           </Box> */}
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              alignItems: "center",
+              marginTop: 30,
+            }}
+          >
+            <Button
+              color="primary"
+              aria-controls="simple-menu"
+              aria-haspopup="true"
+              style={{
+                width: "fit-content",
+                padding: "5px 20px",
+                color: "#757575",
+                background: "white",
+                borderRadius: 10,
+                fontSize: "1.7rem",
+                textTransform: "capitalize",
+                marginBottom: 30,
+              }}
+              onClick={(e) => handleClick(e, 0)}
+            >
+              Use Case
+            </Button>
+            <Button
+              color="primary"
+              aria-controls="simple-menu"
+              aria-haspopup="true"
+              style={{
+                width: "fit-content",
+                padding: "5px 20px",
+                color: "#757575",
+                background: "white",
+                borderRadius: 10,
+                fontSize: "1.7rem",
+                textTransform: "capitalize",
+                marginBottom: 30,
+              }}
+              onClick={(e) => handleClick(e, 1)}
+            >
+              KT Repo
+            </Button>
+            <Button
+              color="primary"
+              aria-controls="simple-menu"
+              aria-haspopup="true"
+              style={{
+                width: "fit-content",
+                padding: "5px 20px",
+                color: "#757575",
+                background: "white",
+                borderRadius: 10,
+                fontSize: "1.7rem",
+                textTransform: "capitalize",
+                marginBottom: 30,
+              }}
+              onClick={(e) => handleClick(e, 2)}
+            >
+              Presales
+            </Button>
+          </div>
+          <Menu
+            id="simple-menu"
+            anchorEl={anchorEl}
+            keepMounted
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+            className="header-menu"
+          >
+            {menuData.map(
+              (item) =>
+                item.type === currentMenuIndex && (
+                  <MenuItem
+                    key={item.id}
+                    onClick={handleClose}
+                    style={{
+                      background: "#053054",
+                      color: "white",
+                      fontSize: "1.3rem",
+                    }}
+                  >
+                    {item.title}
+                  </MenuItem>
+                )
+            )}
+          </Menu>
         </div>
       </div>
     </div>

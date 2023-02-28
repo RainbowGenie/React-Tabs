@@ -7,6 +7,10 @@
     padding-top: 50px;
 }
 
+.header-menu  ul {
+  padding: 0 !important
+}
+
 .header-content>h2{
     color:rgb(44, 123, 188);
     font: 2.5em sans-serif;
@@ -15,7 +19,7 @@
 }
 .navbar-header{
     background-color: rgb(5, 48, 84);
-    height: 16.2rem;
+    /* height: 16.2rem; */
 }
 .navbar-tab{
     padding-top: 20px;
@@ -28,7 +32,7 @@
 .navbar-tabs{
     display: flex;
     justify-content: space-around;
-    width: 1000px;
+    /* width: 1000px; */
 }
 .navbar-tabs>Tab{
     margin: 50px;

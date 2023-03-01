@@ -7,8 +7,13 @@
     padding-top: 50px;
 }
 
+
 .header-menu  ul {
-  padding: 0 !important
+  padding: 0 !important;
+}
+
+.header-menu  div.MuiPaper-root {
+  margin-top: 3px;
 }
 
 .header-content>h2{
@@ -28,6 +33,10 @@
     justify-content: center;
     /* color: white; */
     /* width: 50%; */
+}
+.navbar-tab button.active{
+  color: white !important;
+  border-bottom: solid 2px rgb(44, 116, 188);
 }
 .navbar-tabs{
     display: flex;

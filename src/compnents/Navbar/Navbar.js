@@ -131,12 +131,13 @@ const NavigationBar = () => {
               color="primary"
               aria-controls="simple-menu"
               aria-haspopup="true"
+              className={currentMenuIndex === 0 ? "active" : ""}
               style={{
                 width: "fit-content",
                 padding: "5px 20px",
-                color: "#757575",
-                background: "white",
-                borderRadius: 10,
+                color: "gray",
+                background: "transparent",
+                borderRadius: 0,
                 fontSize: "1.7rem",
                 textTransform: "capitalize",
                 marginBottom: 30,
@@ -149,12 +150,13 @@ const NavigationBar = () => {
               color="primary"
               aria-controls="simple-menu"
               aria-haspopup="true"
+              className={currentMenuIndex === 1 ? "active" : ""}
               style={{
                 width: "fit-content",
                 padding: "5px 20px",
-                color: "#757575",
-                background: "white",
-                borderRadius: 10,
+                color: "gray",
+                background: "transparent",
+                borderRadius: 0,
                 fontSize: "1.7rem",
                 textTransform: "capitalize",
                 marginBottom: 30,
@@ -167,12 +169,13 @@ const NavigationBar = () => {
               color="primary"
               aria-controls="simple-menu"
               aria-haspopup="true"
+              className={currentMenuIndex === 2 ? "active" : ""}
               style={{
                 width: "fit-content",
                 padding: "5px 20px",
-                color: "#757575",
-                background: "white",
-                borderRadius: 10,
+                color: "gray",
+                background: "transparent",
+                borderRadius: 0,
                 fontSize: "1.7rem",
                 textTransform: "capitalize",
                 marginBottom: 30,

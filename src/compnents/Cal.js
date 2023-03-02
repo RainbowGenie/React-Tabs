@@ -6,7 +6,7 @@ const Cal = () => {
       <div className="bom-heading">
         <h1>KT Repo</h1>
       </div>
-      <div className="bom-form" style={{ height: "4cm" }}>
+      <div className="bom-form">
         <div className="row-2">
           <input type="text" placeholder="Dot1x" />
           <input type="text" placeholder=" CWA" />

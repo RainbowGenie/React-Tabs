@@ -114,7 +114,7 @@ const NavigationBar = () => {
               <Cal />
             </TabPanel>
             <TabPanel value={value} index={2}>
-              <SnapShot />
+              {/* <SnapShot /> */}
             </TabPanel>
           </Box>
           {/* <div

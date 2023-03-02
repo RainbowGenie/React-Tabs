@@ -61,11 +61,11 @@
 }
 
 .bom-navbar ,.cal-navbar,.snap-navbar{
-    pading-top: 110px;
+    padding-top: 10px;
     position:absolute;
     left:0;
     /* padding-left: 20px; */
-    width: 40.2cm;
+    width: 100%;
 }
 .cal-heading{
     margin-top: 25px;
@@ -107,8 +107,8 @@
     margin: 30px;
     background-color: rgb(117, 117, 117);
     z-index: 100;
-    width: 38cm;
-    height: 16cm;
+    /* width: 38cm; */
+    /* height: 16cm; */
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
@@ -130,7 +130,7 @@ margin-top: 20px;
     margin-bottom: 20px;
 }
 .row-1>input ,	.MuiInput-root{
-    width: 17.7cm;
+    /* width: 17.7cm; */
     height: 30px;
     padding: 10px;
     /*font-style: small;
@@ -150,7 +150,7 @@ margin-top: 20px;
     flex-direction: column;
 }
 .row-2>input ,.input-labell>input{
-    width: 11.5cm;
+    /* width: 11.5cm; */
     height: 30px;
     padding: 10px;
 

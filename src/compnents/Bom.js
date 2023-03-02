@@ -6,7 +6,7 @@ const Bom = () => {
       <div className="bom-heading">
         <h1>Use Case</h1>
       </div>
-      <div className="bom-form" style={{ height: "4cm" }}>
+      <div className="bom-form">
         <div className="row-1">
           <input type="text" placeholder="Fabric" />
           <input type="text" placeholder=" Non Fabric" />

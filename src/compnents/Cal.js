@@ -1,105 +1,87 @@
-import React from 'react'
+import React from "react";
 
-import Radio from '@mui/material/Radio';
-import RadioGroup from '@mui/material/RadioGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
 const Cal = () => {
-    const [value, setValue] = React.useState('');
-
-    const handleChange = (event) => {
-      setValue(event.target.value);
-    };
   return (
-    <div>
-        <div className="cal-navbar">
+    <div className="bom-navbar">
+      <div className="bom-heading">
+        <h1>KT Repo</h1>
+      </div>
+      <div className="bom-form" style={{ height: "4cm" }}>
+        <div className="row-2">
+          <input type="text" placeholder="Dot1x" />
+          <input type="text" placeholder=" CWA" />
+          <input type="text" placeholder=" WebAuth" />
         </div>
-        <div className="cal-heading">
-<h1>
-    ISE Bill-of-Material Creator
-</h1>
-            
-    </div>
-    <div className="cal-form">
-    <section class="container">
-      {/* <header>Registration Form</header> */}
-      <form action="#" class="form">
-      <div class="column">
-
-        <div class="input-box">
-          <label>Customer Name</label>
-          <input type="text" placeholder="Enter the Customer name" required />
+        {/* <div className="row-2">
+          <input type="text" placeholder="Dot1x" />
+          <input type="text" placeholder=" CWA" />
+          <input type="text" placeholder=" WebAuth" />
         </div>
-
-        <div class="input-box">
-          <label>BDM's Name</label>
-          <input type="text" placeholder="Enter the Name here" required />
+        <div className="row-2">
+          <input
+            type="number"
+            placeholder=" Locations with Session within 5k*"
+          />
+          <input
+            type="number"
+            placeholder=" Locations with Session between 5k to 25k*"
+          />
+          <input
+            type="number"
+            placeholder=" Locations with Session between 25k to 50k*"
+          />
         </div>
-        </div>
-
-        <div class="column">
-          <div class="input-box">
-            <label>Deal ID</label>
-            <input type="number" placeholder="Enter phone number" required />
+        <div className="row-2 row3">
+          <div className="input-labell">
+            <input type="number" placeholder="Secure Accesss" />
+            <label>
+              Intent based network access acrooss the wired, wireless and VPN
+            </label>
           </div>
-          <div class="input-box">
-            <label>BDM'S Contact Number</label>
-            <input type="text" placeholder="Enter Contact Number" required />
+          <div className="input-labell">
+            <input type="number" placeholder="Guest Access" />
+            <label> Enable Guest access at ease</label>
+          </div>
+          <div className="input-labell">
+            <input type="number" placeholder=" Asses Visiblilty (Profiling)" />
+            <label>
+              {" "}
+              See whats' on your network and where they are located
+            </label>
           </div>
         </div>
-        {/* <div class="gender-box">
-          <h3>Gender</h3>
-          <div class="gender-option">
-            <div class="gender">
-              <input type="radio" name="gender" checked />
-              <label for="check-male">SDA</label>
-            </div>
-            <div class="gender">
-              <input type="radio" name="gender" />
-              <label for="check-female">Migration</label>
-            </div>
-            <div class="gender">
-              <input type="radio" name="gender" />
-              <label for="check-other">Non-Sda</label>
-            </div>
+        <div className="row-2 row3">
+          <div className="input-labell">
+            <input type="number" placeholder="Complicance " />
+            <label>
+              Deeper Visiblilty and Complicance chance on Desktop/Laptop
+            </label>
           </div>
+          <div className="input-labell">
+            <input
+              type="number"
+              placeholder="Enter the number of PSNs used for TACACS"
+            />
+            <label> Role base network device adminstraion over TACASCS</label>
+          </div>
+          <div className="input-labell">
+            <input type="number" placeholder="Bring Your Own Device (BYOD)" />
+            <label>
+              {" "}
+              Deeper Visiblilty and Control chance on Desktop and mobile devices
+              Apps
+            </label>
+          </div>
+        </div>
+        <div className="row-1">
+          <input type="text" placeholder="ISE Virtual Machines" />
+          <input type="number" placeholder=" MDM Managed Devices" />
         </div> */}
-       
-        <div className="project-select">
 
-      
-        <FormLabel id="demo-controlled-radio-buttons-group">Project Type: Migration</FormLabel>
-        <RadioGroup
-        aria-labelledby="demo-controlled-radio-buttons-group"
-        name="controlled-radio-buttons-group"
-        value={value}
-        onChange={handleChange}
-      >
-        <FormControlLabel value="SDA" control={<Radio />} label="SDA" />
-        <FormControlLabel value="Migration" control={<Radio />} label="Migration" />
-        <FormControlLabel value="Non-Sda" control={<Radio />} label="Non-Sda" />
-      </RadioGroup>
-        <FormLabel id="demo-controlled-radio-buttons-group">Migration Type:</FormLabel>
-        <RadioGroup
-        aria-labelledby="demo-controlled-radio-buttons-group"
-        name="controlled-radio-buttons-group"
-        value={value}
-        onChange={handleChange}
-      >
-        <FormControlLabel value="ISE to ISE Migration" control={<Radio />} label="ISE to ISE Migration" />
-        <FormControlLabel value="Non-SDA to SDA Migration" control={<Radio />} label="Non-SDA to SDA Migration" />
-        <FormControlLabel value="ACS to ISE to ISE Migration" control={<Radio />} label="ACS to ISE to ISE Migration" />
-      </RadioGroup>
+        {/* <button className="bom-butoon">Submit</button> */}
+      </div>
+    </div>
+  );
+};
 
-       
-    </div>
-        <button>Submit</button>
-      </form>
-    </section>
-    </div>
-    </div>
-  )
-}
-
-export default Cal
+export default Cal;

@@ -79,12 +79,14 @@ const NavigationBar = () => {
     <div>
       <div className="navbar-header">
         <div className="header-content">
-          <Cisco />
+          <img src="CX2.png" style={{ width: 110, height: 68 }} alt="" />
+          {/* <Cisco /> */}
           <h2>Wi-Fi</h2>
+          {/* <img src="CX.jpg" style={{ width: 110, height: 68 }} alt="" /> */}
           <Cisco />
         </div>
         <div className="navbar-tab">
-          {/* <Box className="navbar-tab">
+          <Box className="navbar-tab">
             <>
               <Tabs
                 className="navbar-tabs"
@@ -94,17 +96,13 @@ const NavigationBar = () => {
               >
                 <Tab
                   sx={{ color: "gray" }}
-                  label="ISE BOM Creator"
+                  label="Use Case"
                   {...a11yProps(0)}
                 />
+                <Tab sx={{ color: "gray" }} label="KT Repo" {...a11yProps(1)} />
                 <Tab
                   sx={{ color: "gray" }}
-                  label="PDI-LOE Calculator"
-                  {...a11yProps(1)}
-                />
-                <Tab
-                  sx={{ color: "gray" }}
-                  label="Snapshots"
+                  label="Presales"
                   {...a11yProps(2)}
                 />
               </Tabs>
@@ -118,8 +116,8 @@ const NavigationBar = () => {
             <TabPanel value={value} index={2}>
               <SnapShot />
             </TabPanel>
-          </Box> */}
-          <div
+          </Box>
+          {/* <div
             style={{
               display: "flex",
               justifyContent: "space-around",
@@ -209,7 +207,7 @@ const NavigationBar = () => {
                   </MenuItem>
                 )
             )}
-          </Menu>
+          </Menu> */}
         </div>
       </div>
     </div>

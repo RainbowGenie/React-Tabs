@@ -101,18 +101,19 @@
 }
 
 .bom-form{
-    border-radius: 12px;
-    padding-top: 20px;
-    padding-left: 20px;
+    /* border-radius: 12px; */
+    /* padding-top: 20px; */
+    /* padding-left: 20px; */
     margin: 30px;
-    background-color: rgb(117, 117, 117);
+    background-color: white;
     z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 4px #2c2a2a;
+    height: 120px;
     /* width: 38cm; */
     /* height: 16cm; */
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
 }
 
 

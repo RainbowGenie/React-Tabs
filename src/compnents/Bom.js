@@ -1,4 +1,8 @@
 import React from "react";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import Select from "@mui/material/Select";
+import FormControl from "@mui/material/FormControl";
 
 const Bom = () => {
   return (
@@ -7,10 +11,42 @@ const Bom = () => {
         <h1>Use Case</h1>
       </div>
       <div className="bom-form">
-        <div className="row-1">
+        <FormControl sx={{ m: 1 }} style={{ width: "30%" }}>
+          <InputLabel id="demo-simple-select-helper-label">Fabric</InputLabel>
+          <Select
+            labelId="demo-simple-select-helper-label"
+            id="demo-simple-select-helper"
+            label="Fabric"
+          >
+            <MenuItem value="">
+              <em>None</em>
+            </MenuItem>
+            <MenuItem value={10}>Ten</MenuItem>
+            <MenuItem value={20}>Twenty</MenuItem>
+            <MenuItem value={30}>Thirty</MenuItem>
+          </Select>
+        </FormControl>
+        <FormControl sx={{ m: 1 }} style={{ width: "30%" }}>
+          <InputLabel id="demo-simple-select-helper-label">
+            Non-Fabric
+          </InputLabel>
+          <Select
+            labelId="demo-simple-select-helper-label"
+            id="demo-simple-select-helper"
+            label="Non-Fabric"
+          >
+            <MenuItem value="">
+              <em>None</em>
+            </MenuItem>
+            <MenuItem value={10}>Ten</MenuItem>
+            <MenuItem value={20}>Twenty</MenuItem>
+            <MenuItem value={30}>Thirty</MenuItem>
+          </Select>
+        </FormControl>
+        {/* <div className="row-1">
           <input type="text" placeholder="Fabric" />
           <input type="text" placeholder=" Non Fabric" />
-        </div>
+        </div> */}
         {/* <div className="row-2">
           <input type="number" placeholder=" Total Location*" />
           <input type="number" placeholder="Management Center*" />

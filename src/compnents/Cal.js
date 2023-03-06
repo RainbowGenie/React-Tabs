@@ -1,4 +1,8 @@
 import React from "react";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import Select from "@mui/material/Select";
+import FormControl from "@mui/material/FormControl";
 
 const Cal = () => {
   return (
@@ -7,11 +11,51 @@ const Cal = () => {
         <h1>KT Repo</h1>
       </div>
       <div className="bom-form">
-        <div className="row-2">
-          <input type="text" placeholder="Dot1x" />
-          <input type="text" placeholder=" CWA" />
-          <input type="text" placeholder=" WebAuth" />
-        </div>
+        <FormControl sx={{ m: 1 }} style={{ width: "30%" }}>
+          <InputLabel id="demo-simple-select-helper-label">Dot1x</InputLabel>
+          <Select
+            labelId="demo-simple-select-helper-label"
+            id="demo-simple-select-helper"
+            label="Dot1x"
+          >
+            <MenuItem value="">
+              <em>None</em>
+            </MenuItem>
+            <MenuItem value={10}>Ten</MenuItem>
+            <MenuItem value={20}>Twenty</MenuItem>
+            <MenuItem value={30}>Thirty</MenuItem>
+          </Select>
+        </FormControl>
+        <FormControl sx={{ m: 1 }} style={{ width: "30%" }}>
+          <InputLabel id="demo-simple-select-helper-label">CWA</InputLabel>
+          <Select
+            labelId="demo-simple-select-helper-label"
+            id="demo-simple-select-helper"
+            label="CWA"
+          >
+            <MenuItem value="">
+              <em>None</em>
+            </MenuItem>
+            <MenuItem value={10}>Ten</MenuItem>
+            <MenuItem value={20}>Twenty</MenuItem>
+            <MenuItem value={30}>Thirty</MenuItem>
+          </Select>
+        </FormControl>
+        <FormControl sx={{ m: 1 }} style={{ width: "30%" }}>
+          <InputLabel id="demo-simple-select-helper-label">WebAuth</InputLabel>
+          <Select
+            labelId="demo-simple-select-helper-label"
+            id="demo-simple-select-helper"
+            label="WebAuth"
+          >
+            <MenuItem value="">
+              <em>None</em>
+            </MenuItem>
+            <MenuItem value={10}>Ten</MenuItem>
+            <MenuItem value={20}>Twenty</MenuItem>
+            <MenuItem value={30}>Thirty</MenuItem>
+          </Select>
+        </FormControl>
         {/* <div className="row-2">
           <input type="text" placeholder="Dot1x" />
           <input type="text" placeholder=" CWA" />

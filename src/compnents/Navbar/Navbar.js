@@ -81,7 +81,7 @@ const NavigationBar = () => {
         <div className="header-content">
           <img src="CX2.png" style={{ width: 110, height: 68 }} alt="" />
           {/* <Cisco /> */}
-          <h2>Wi-Fi</h2>
+          <h2>iWild</h2>
           {/* <img src="CX.jpg" style={{ width: 110, height: 68 }} alt="" /> */}
           <Cisco />
         </div>
@@ -114,7 +114,7 @@ const NavigationBar = () => {
               <Cal />
             </TabPanel>
             <TabPanel value={value} index={2}>
-              {/* <SnapShot /> */}
+              <Cal />
             </TabPanel>
           </Box>
           {/* <div

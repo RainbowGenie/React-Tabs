@@ -79,7 +79,11 @@ const NavigationBar = () => {
     <div>
       <div className="navbar-header">
         <div className="header-content">
-          <img src="CX2.png" style={{ width: 110, height: 68 }} alt="" />
+          <img
+            src="CX2.png"
+            style={{ width: 110, height: 68, marginLeft: 100 }}
+            alt=""
+          />
           {/* <Cisco /> */}
           <h2>iWild</h2>
           {/* <img src="CX.jpg" style={{ width: 110, height: 68 }} alt="" /> */}
@@ -107,13 +111,13 @@ const NavigationBar = () => {
                 />
               </Tabs>
             </>
-            <TabPanel value={value} index={0}>
+            <TabPanel value={value} index={0} style={{ marginTop: "-40px" }}>
               <Bom />
             </TabPanel>
-            <TabPanel value={value} index={1}>
+            <TabPanel value={value} index={1} style={{ marginTop: "-40px" }}>
               <Cal />
             </TabPanel>
-            <TabPanel value={value} index={2}>
+            <TabPanel value={value} index={2} style={{ marginTop: "-40px" }}>
               <Cal />
             </TabPanel>
           </Box>

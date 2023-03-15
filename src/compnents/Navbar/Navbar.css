@@ -18,7 +18,7 @@ margin-top: 3px;
 
 .header-content>h2{
   color:rgb(44, 123, 188);
-  font: 2.5em sans-serif;
+  font: 3.5em sans-serif;
   font-weight: bold;
 
 }
@@ -27,7 +27,6 @@ margin-top: 3px;
   /* height: 16.2rem; */
 }
 .navbar-tab{
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
